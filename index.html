@@ -7,13 +7,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <style>
   .container{ margin-bottom: 100px;}
-  .container2{margin-left: 82px; margin-right: 82px;}
-  .orange-bg{background-color: #fceae8; border-radius: 10px;}
+  .container2{margin-left: 82px; margin-right: 82px; margin-bottom:100px;}
+  .orange-bg{background-color: #fceae8; border-radius: 10px; }
+  .orange-bg2{background-color: #fceae8; border-radius: 10px; width:950px; height: 200px;}
   .buy-button{border:none; background-color:#ff136F;border-radius: 5%; }
   .carousel-item {
 padding: 20px 40px;
   }
+  .cat1{ background-color: magenta;}
+  .cat2{background-color: yellow;}
+  .cat3{background-color:blue;}
+  .cat1,.cat2,.cat3{
+    padding:10px; border-radius: 5px;
+  }
+  .categories h1{color:white; }
+  .categories img{width:100px}
+  .card-title{font-size:large;}
+  .card{
+    border:none; box-shadow: 5px 5px 10px lightgray; border-radius: 10px;
+  }
+  .card-footer{ border: none; color:gray;}
+  footer{ text-align:center;}
 </style>
+
 </head>
 <body>
 
@@ -31,13 +47,13 @@ padding: 20px 40px;
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bagpack</a>
+              <a class="nav-link" href="#Bagpack">Bagpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+              <a class="nav-link disabled" href="#Subscribe" tabindex="-1" aria-disabled="true">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -97,19 +113,117 @@ padding: 20px 40px;
 <div class="container categories">
 <div class="row">
   <div class="col-md-4">
-    <h1>Watch</h1>
+    <div class="d-flex justify-content-between  align-items-center cat1">
+      <h1>Watch</h1>
+   
+ 
     <img src="panda-commerce/categories/watch.png">
   </div>
-  <div class="col-md-4">
-    <h1>Bag</h1>
-    <img src="panda-commerce/categories/shoes.png">
+    
+  </div>
+  <div class="col-md-4 ">
+    <div class="d-flex justify-content-between  align-items-center cat2"><h1>Bag</h1>
+      <img src="panda-commerce/categories/bag.png"></div>
+    
 
   </div>
-  <div class="col-md-4">
-    <h1>Shoes</h1>
-    <img src="panda-commerce/categories/shoes.png">
+  <div class="col-md-4 ">
+    <div class="d-flex justify-content-between  align-items-center cat3">
+      <h1>Shoes</h1>
+      <img src="panda-commerce/categories/shoes.png">
+    </div>
+    
   </div>
 </div>
+</div>
+<div class="container" id="shoes">
+
+<h3>
+  Shoes
+</h3>
+<div class="card-deck">
+  <div class="card">
+    <img src="panda-commerce/shoes/shoe-1.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Supply 350</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5>$350</h5>
+      <button class="buy-button">Buy Now>></button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="panda-commerce/shoes/shoe-2.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nike 320</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5>$350</h5>
+      <button class="buy-button">Buy Now>></button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="panda-commerce/shoes/shoe-3.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Red Max</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <h5>$350</h5>
+      <button class="buy-button">Buy Now>></button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container" id="Bagpack">
+  <h3> Bagpacks</h3>
+  <div class="card-deck">
+    <div class="card">
+      <img src="panda-commerce/bags/bag-3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>Blue Bagpack</h3>
+        <h3> $289</h3>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <button class="buy-button">Buy Now>></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="panda-commerce/bags/bag-2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>Red Bagpack</h3>
+        <h3> $498</h3>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <button class="buy-button">Buy Now>></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="panda-commerce/bags/bag-3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>Black Bagpack</h3>
+        <h3> $589</h3>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <button class="buy-button">Buy Now>></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container d-flex align-items-center  d-flex justify-content-center orange-bg2" id="Subscribe">
+
+
+   <div> <h4> Let's stay in touch</h4>
+    <h6> Get updates on sales, specials and more</h6>
+    <input type="text"> </br>
+    
+  <button class="buy-button"> Submit</button>
+  </div>
+  </div>
+<footer>
+  <small> @copyright.panada-commerce</small>
+</footer>
+ 
+
 </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
